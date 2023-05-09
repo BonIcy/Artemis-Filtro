@@ -1,0 +1,10 @@
+import myHeader from "../components/myHeader.js";
+import { navbar } from "../components/navbar.js";
+import {openModal, closeModal} from "../components/modal.js";
+import { productos } from "../components/productos.js";
+import {agregar} from "../js/agregarOpciones.js";
+productos(); 
+myHeader.show();
+navbar();
+openModal(); closeModal();
+agregar();

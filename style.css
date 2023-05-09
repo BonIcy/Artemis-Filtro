@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(181, 110, 240);
+    color: rgb(59, 7, 107);
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  body{
+    background-color: rgb(192, 160, 233);
+  }
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: rgb(50, 18, 87);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.25rem
+  }
+  
+  .nav-link:hover {
+    color: rgb(160, 250, 255);
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 20px;
+    }
+    .navbar-nav.active {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-item {
+      margin: 10px 0;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-toggle.active .navbar-toggle-icon:nth-child(2) {
+      display: none;
+    }
+    .navbar-toggle.active .navbar-toggle-icon:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .navbar-toggle.active .navbar-toggle-icon:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+/* The Modal (background) */
+.modal-wrapper {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.6); 
+  }
+  
+  /* Modal Content/Box */
+  .modal {  
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    padding: 20px;
+  }
+  
+  /* Close Button */
+  .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  #modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 0.5rem;
+  }
+  
+  th {
+    background-color: #ccc;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  

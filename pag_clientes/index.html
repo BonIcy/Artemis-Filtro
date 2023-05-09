@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="main.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="titulo"class="navbar-logo"></div>
+        <ul id="botones"class="navbar-nav">
+
+        </ul>
+        <div class="navbar-toggle">
+          <span class="navbar-toggle-icon"></span>
+        </div>
+      </nav>
+      <section>
+        <h1>Usuario</h1>
+        <div id="usuario">        
+          <div class="conta" style="display: flex; text-align: center;">
+              <table class="table" style="width: 55rem;">
+                <thead class="menu-busqueda" style="max-width: 100%;">
+                      <tr>
+                          <th scope="col">Id</th>
+                          <th scope="col">Usuario</th>
+                          <th scope="col">Correo</th>
+                      </tr>
+                </thead>
+                      <tbody class="tbody table-group-divider lista" style="justify-items:center;max-width: 100%;">
+          
+                      </tbody>
+              </table>
+            </div>
+            </div>
+      </section>
+      <button id="modalOpen">Añadir cliente</button>
+      <div class="modal-wrapper" id="modal">
+          <div class="modal">
+              <div class="modal-content">
+              <span class="close-modal">&times;</span>
+              <form id="agregarC" method="POST">
+                <label for="prod-name">Nombre del nuevo cliente:</label>
+                <input type="text" id="nameC" name="cat-name" required><br><br>
+                <label for="cliente-cat">Correo del cliente:</label>
+                <input type="text" id="correo" name="cliente-correo" required><br><br>
+                <button type="submit">Agregar cliente</button>
+              </form>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
